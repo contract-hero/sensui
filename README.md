@@ -9,7 +9,7 @@ A native macOS companion for building on Sui. sensui takes care of the setup and
 - **Toolchain:** checks which prerequisites are missing (Xcode Command Line Tools, Homebrew, colima, docker CLI, suiup, sui, move-analyzer) and installs only those. It keeps `sui` and `move-analyzer` at the same version, and it shows updates and a health check.
 - **Localnet:** starts a local Sui network in containers with one click. The network has a faucet, an indexer and GraphQL RPC, and it runs the same release as your host CLI. You can pick an Ephemeral (fresh genesis on each start) or a Persisted (state survives a restart) Localnet.
 - **Networks and Addresses:** shows and switches the Active Network and the Active Address. It creates and imports Addresses, shows balances, and funds an Address on Localnet and devnet.
-- **Harness:** installs [sui-pilot](https://github.com/contract-hero) into Claude Code. The Network and the Address you pick in sensui are the ones that Claude uses on its next command.
+- **Harness:** installs [sui-pilot](https://github.com/contract-hero/sui-pilot) into Claude Code. The Network and the Address you pick in sensui are the ones that Claude uses on its next command.
 
 Every action is a visible CLI command that you could run yourself. sensui keeps no keys or networks of its own: `~/.sui/sui_config` is the single source of truth.
 
